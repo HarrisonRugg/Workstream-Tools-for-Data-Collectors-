@@ -7,43 +7,68 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3/dist/tabler-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<main>
 
-    <h1>Workstream Tools List</h1>
+    <header class="page-header">
+        <img src="favicon.svg" alt="" width="28" height="28">
+        <div>
+            <h1>Workstream Tools</h1>
+            <p class="subtitle">Links for Menlo Park data collectors</p>
+        </div>
+    </header>
 
-    <h2>Fleet and Rig Tools</h2>
-    <ul>
-        <li><a href="https://fleet.shiftiq.us"><strong>Fleet Board</strong></a></li>
-        <li><a href="https://rigcheckout.streamlit.app/">Rig Check Out</a></li>
-    </ul>
+    <input id="search" class="search" type="search" placeholder="Search tools and forms" aria-label="Search tools and forms" hidden>
 
-    <h2>Clock-in and Call-Out Tools</h2>
-    <ul>
-        <li><a href="https://call-out-list.streamlit.app/">Call Out or Call In Late</a></li>
-        <li><a href="https://ops.usephysical.ai/kiosk/us-menlo-park-rpi5">Clock In / Out For Current Time</a></li>
-        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfovFzt4BkKYGQ7z5xuIIOeNm2JJLHcydr_t76pjIM7M9JSFw/viewform">Clock In / Out For Another Time</a></li>
-    </ul>
+    <section class="group" data-group>
+        <h2><i class="ti ti-bolt" aria-hidden="true"></i>Most Used</h2>
+        <div class="quick">
+            <a class="tile" href="https://ops.usephysical.ai/kiosk/us-menlo-park-rpi5"><i class="ti ti-clock" aria-hidden="true"></i>Clock In / Out</a>
+            <a class="tile" href="https://call-out-list.streamlit.app/"><i class="ti ti-phone-off" aria-hidden="true"></i>Call Out or Late</a>
+            <a class="tile" href="https://rigcheckout.streamlit.app/"><i class="ti ti-backpack" aria-hidden="true"></i>Rig Check Out</a>
+            <a class="tile" href="https://fleet.shiftiq.us"><i class="ti ti-layout-board" aria-hidden="true"></i>Fleet Board</a>
+        </div>
+    </section>
 
-    <h2>Quarry App for Rig Operations</h2>
-    <ul>
-        <li><a href="https://testflight.apple.com/join/dfU43Zbq">Apple App</a></li>
-        <li><a href="https://slack-files.com/t84a6pjgn-f0bnxm03x41-05df3542d4">Android App</a></li>
-    </ul>
+    <div class="groups">
+        <section class="group" data-group>
+            <h2><i class="ti ti-forms" aria-hidden="true"></i>Forms <span class="tag">New</span></h2>
+            <ul class="card">
+                <li><a href="https://docs.google.com/forms/d/1Ej4kvTjQbdjPQEvnbPuC5-8pimNr4HYNBqSli3WX1QI/viewform"><i class="ti ti-bulb" aria-hidden="true"></i>Feature Request and Suggestion</a></li>
+                <li><a href="https://docs.google.com/forms/d/1XxQyQSiweZBujUbC7yqwgaXzmv_eW0K6ylZyYSkbG-Y/viewform"><i class="ti ti-message-2" aria-hidden="true"></i>Menlo Operations Feedback</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSck9Xt4XHf0uvNRyQz9xFEtUi-Jv1LQf1Joe5QGsrPVPLmy_w/viewform"><i class="ti ti-school" aria-hidden="true"></i>Skill Interest</a></li>
+            </ul>
+        </section>
 
-    <h2>Forms</h2>
-    <ul>
-        <li><a href="https://docs.google.com/forms/d/1Ej4kvTjQbdjPQEvnbPuC5-8pimNr4HYNBqSli3WX1QI/viewform">Feature Request and Suggestion Form</a></li>
-        <li><a href="https://docs.google.com/forms/d/1XxQyQSiweZBujUbC7yqwgaXzmv_eW0K6ylZyYSkbG-Y/viewform">Menlo Operations Feedback Form</a></li>
-        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSck9Xt4XHf0uvNRyQz9xFEtUi-Jv1LQf1Joe5QGsrPVPLmy_w/viewform">Skill Interest Form</a></li>
-    </ul>
+        <section class="group" data-group>
+            <h2><i class="ti ti-clock" aria-hidden="true"></i>Time and Attendance</h2>
+            <ul class="card">
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfovFzt4BkKYGQ7z5xuIIOeNm2JJLHcydr_t76pjIM7M9JSFw/viewform"><i class="ti ti-clock-edit" aria-hidden="true"></i>Clock In / Out For Another Time</a></li>
+            </ul>
+        </section>
 
-    <h2>Community</h2>
-    <ul>
-        <li><a href="https://discord.gg/pApzJVBXh">Join Workstream Discord Server</a></li>
-    </ul>
+        <section class="group" data-group>
+            <h2><i class="ti ti-device-mobile" aria-hidden="true"></i>Quarry App for Rig Operations</h2>
+            <ul class="card">
+                <li><a href="https://testflight.apple.com/join/dfU43Zbq"><i class="ti ti-brand-apple" aria-hidden="true"></i>iPhone (TestFlight)</a></li>
+                <li><a href="https://slack-files.com/t84a6pjgn-f0bnxm03x41-05df3542d4"><i class="ti ti-brand-android" aria-hidden="true"></i>Android</a></li>
+            </ul>
+        </section>
 
-    <script src="script.js"></script>
+        <section class="group" data-group>
+            <h2><i class="ti ti-users" aria-hidden="true"></i>Community</h2>
+            <ul class="card">
+                <li><a href="https://discord.gg/pApzJVBXh"><i class="ti ti-brand-discord" aria-hidden="true"></i>Workstream Discord Server</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <p id="no-results" class="no-results" hidden>No matches. Try "clock" or "form".</p>
+
+</main>
+<script src="script.js"></script>
 </body>
 </html>
